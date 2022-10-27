@@ -28,6 +28,16 @@
   </head>
   
   <body>
+    <script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
     <!-- Header Section Start -->
     <header id="home" class="hero-area">    
@@ -52,9 +62,16 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">Services</a>
               </li>                            
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#showcase">Showcase</a>
-              </li>       
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false" onclick="myFunction()">
+            Showcase
+          </a>
+          <ul class="dropdown-menu" id="myLinks">
+            <li><a class="dropdown-item" href="#">Kubernetes</a></li>
+            <li><a class="dropdown-item" href="#">Jenkins</a></li>
+            <li><a class="dropdown-item" href="#">Containers</a></li>
+          </ul>  
+          </li>        
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#pricing">Pricing</a>
               </li>     
