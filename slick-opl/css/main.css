@@ -72,7 +72,19 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   background: transparent !important; }
 
 .bg-defult {
-  background: #3c9cfd !important; }
+  background: #3c9cfd !important; 
+}
+  .img-fluid{
+    height: 360px;
+    width: 360px;
+    border-style: solid;
+
+  }
+  .client-thumb img{
+    height: 90px;
+    width: 90px;
+
+  }
 
 /* ==========================================================================
    Section Title
